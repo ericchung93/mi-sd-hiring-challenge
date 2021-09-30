@@ -7,8 +7,58 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <style type="text/css">
+    #ziplbl, #ziptxt{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:24px;
+    }
+
+    .location{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:30px;
+      color:slategrey;
+    }
+
+    #gobtn{
+      border-radius: 12px;
+      background-color: #4caf50;
+      font-size:24px;
+      color:#fff;
+      box-shadow: 0 9px #999;
+    }
+
+    #gobtn:hover{
+      background-color:#3e8e41;
+    }
+
+    #display{
+      text-align: left;
+      font-size: 16px;
+      border-spacing: 20px;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      font-size: 24px;
+    }
+    th {
+      background-color: #5DADE2;
+      color: #FFFFFF;
+    }
+
+  </style>
+  <div id="app">
+      <div>
+          <label id='ziplbl'>ENTER ZIPCODE: </label>
+          <input id='ziptxt' type='text' placeholder='Enter zipcode here...'>
+          <button id='gobtn'>GO</button>
+      </div>
+      <div id='header'></div>
+      <table id='display'></table>
+  </div>
+  <script src="src/app.js"></script>
 </body>
-<script src="src/app.js"></script>
+
 
 </html>
